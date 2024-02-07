@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Community Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us better our community!</p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label">Name(Required)<input id="name" type="text" placeholder="Please enter your name..."required></label>
+      <label id="email-label">Email(Required)<input id="email" type="email" placeholder="Please enter your email..."required></label>
+      <label id="number-label">Age(Optional)<input id="number" type="number" min="3" max="20" placeholder="Please enter your age..."></label>
+      <label for="dropdown">What option best describes your town residency?
+        <select id="dropdown" required>
+          <option value="">select one</option>
+          <option value="1">Lifelong</option>
+          <option value="2">Transplant</option>
+          <option value="3">Temporary</option>
+        </select>
+      </label>
+      <br>
+      Do you own business in the community?
+      <label for="yes-business">Yes
+      <input value="yes-business" type="radio" id="yes-business" name="account-type"></label>
+      <label for="no-business">No
+        <input value="no-business"type="radio" id="no-business" name="account-type">  
+        </label>
+    <br>
+    <label>Which options do you think can better our community? (Check all that apply)
+        <label for="parks">Park Spaces<input id="parks" value="parks" type="checkbox" name="parks"></label>
+        <label for="trails">Walking Trails<input id="trails" value="trails" type="checkbox"></label>
+        <label for="housing">Income-Based Housing<input id="housing" value="housing" type="checkbox"></label>
+        <label for="greens">Accessible Green Areas<input id="greens" value="greens" type="checkbox"></label>
+        <label for="uplift">Downtown Uplift<input id="uplift" value="uplift" type="checkbox"></label>
+        <label for="lots">Parking Lots Downtown<input id="lots" value="lots" type="checkbox"></label>
+        <label for="other">Other<input id="other" value="other" type="checkbox"></label>   
+        
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments">
+            </textarea>
+        </label>
+    </fieldset>
+        <label for="submit">
+        <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
