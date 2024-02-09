@@ -1,12 +1,24 @@
-label {
-    display: block;
-  }
-
-  h1, p {
-    text-align: center;
-}
-
 form {
     width: 600px;
     margin: 0 auto;
+}
+
+input {
+    display: block;
+}
+
+label {
+    display: block;
+}
+
+
+h1, p {
+    text-align: center;
+}
+
+.inline {
+    display: inline; 
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
 }
