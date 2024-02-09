@@ -7,3 +7,6 @@ form {
     margin: 0 auto;
 }
 
+label {
+    display: block;
+}
